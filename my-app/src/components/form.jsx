@@ -41,7 +41,7 @@ import {
               </FormControl>
               <FormControl id="date">
                 <FormLabel>Expiry date</FormLabel>
-                <Input type="date" />
+                <Input type="month" />
               </FormControl>
               <Stack spacing={10}>
                 <Stack
@@ -49,14 +49,19 @@ import {
                   align={'start'}
                   justify={'space-between'}>
                 </Stack>
+                <Link href="/otp">
                 <Button
                   bg={'#4c83ee'}
                   color={'white'}
                   _hover={{
                     bg: 'blue.500',
-                  }}>
-                  Save
+                  }}
+                 
+                  >
+                  PAY
                 </Button>
+                </Link>
+              
               </Stack>
             </Stack>
           </Box>

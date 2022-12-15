@@ -26,6 +26,9 @@ import {
   } from '@chakra-ui/icons';
   
    function WithSubnavigation() {
+
+
+
     const { isOpen, onToggle } = useDisclosure();
   
     return (
@@ -58,7 +61,7 @@ import {
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
-        <Link href="/home"><img style={{height:"60px",width:"100px",borderRadius:"8px"}} src={process.env.PUBLIC_URL + '/logo.png'} alt="logo"/></Link>
+        <Link href="/"><img style={{height:"60px",width:"100px",borderRadius:"8px"}} src={process.env.PUBLIC_URL + '/logo.png'} alt="logo"/></Link>
 
             </Text>
   
@@ -73,6 +76,8 @@ import {
             justify={'center'}
             direction={'row'}
             spacing={6}>
+
+             
             <Button
             style={{border:"1px solid #1a2e44",width:"77px",color:"#1a2e44"}}
               as={'a'}
@@ -82,6 +87,8 @@ import {
               href={'/login'}>
               Log In
             </Button>
+
+            <Link href="/signup">
             <Button
               display={{ base: 'none', md: 'inline-flex' }}
               fontSize={'sm'}
@@ -89,10 +96,12 @@ import {
 
               color={'#ffffff'}
               bg={"#22d172"}
-              href={'/signup'}
+              // href={'/signup'}
               >
               Sign Up
             </Button>
+            </Link>
+            
           </Stack>
         </Flex>
   

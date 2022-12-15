@@ -1,9 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-
-
 function HomePage(){
+
+
     return <div >
 <div style={{height:"1200px",width:"100%",fontFamily:"Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji",backgroundColor:"888888"}}>
 <h1 style={{textAlign:"center",fontSize:"42px",
@@ -24,7 +24,7 @@ fontWeight:"600",marginTop:"50px"
 
 </div>
 <div style={{height:"600px",width:"80%",marginTop:"40px",margin:"auto"}}>
-<img style={{height:"100%",width:"100%"}}  src={process.env.PUBLIC_URL + '/banner.png'} alt="banner"/>
+<img style={{height:"100%",width:"100%"}}   src={process.env.PUBLIC_URL + '/banner.png'} alt="banner"/>
 
 </div>
 </div>

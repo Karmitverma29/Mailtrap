@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 
 function Login() {
   let data=JSON.parse(localStorage.getItem("Data"));
-
   const[loginn,setLoginn]=useState({
     email:"",
     password:"",
@@ -15,6 +14,8 @@ function Login() {
   
       setLoginn({...loginn,[e.target.name]:e.target.value});
     }
+    const[loggedin,setLoggedin]=useState(false);
+
     let handlesubmit=(e)=>{
       e.preventDefault();
       if(loginn.email!==data.email||loginn.password!==data.password){
@@ -23,8 +24,12 @@ function Login() {
 
       }
       else if(loginn.email===data.email&&loginn.password===data.password){
+        setLoggedin(true);
+
 alert("Login Successful!");
-navigate("/home")
+localStorage.setItem("login",loggedin);
+console.log(loggedin)
+navigate("/")
 
 
       }

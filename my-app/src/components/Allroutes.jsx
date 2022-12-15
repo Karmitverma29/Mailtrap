@@ -10,18 +10,26 @@ import Footer from "../navigationBar/footer";
 import LoginSuccess from "../components/loginSuccess";
 import Pricing from "./pricing";
 import Checkout from "./checkout";
+import Otp from "./otp";
+import FurtherCheckout from "./furthercheckout";
+import Loading from "./loading";
 function Allroutes(){
+
     return <div>
         <WithSubnavigation/>
+     
         <Routes>
     <Route path="/auto" element={<Automation/>}/>
     <Route path="/email" element={<Email/>}/>
     <Route path="/login" element={<Login/>}/>
     <Route path="/signup" element={<Signup/>}/>
-    <Route path="/home" element={<HomePage/>}/>
+    <Route path="/" element={<HomePage/>}/>
     <Route path="/success" element={<LoginSuccess/>}/>
     <Route path="/pricing" element={<Pricing/>}/>
     <Route path="/checkout" element={<Checkout/>}/>
+    <Route path="/otp" element={<Otp/>}/>
+    <Route path="/furtherCheckout" element={<FurtherCheckout/>}/>
+    <Route path="/loading" element={<Loading/>}/>
 </Routes>
         <Footer/>
 
