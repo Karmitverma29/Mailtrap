@@ -24,7 +24,7 @@ fontWeight:"600",marginTop:"50px"
 
 </div>
 <div style={{height:"600px",width:"80%",marginTop:"40px",margin:"auto"}}>
-<img style={{height:"100%",width:"100%"}}   src={process.env.PUBLIC_URL + '/banner.png'} alt="banner"/>
+<img style={{height:"80%",width:"80%",marginLeft:"120px"}}   src={process.env.PUBLIC_URL + '/banner.png'} alt="banner"/>
 
 </div>
 </div>

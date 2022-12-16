@@ -1,12 +1,8 @@
 import {
     Table,
-    Thead,
     Tbody,
-    Tfoot,
     Tr,
-    Th,
     Td,
-    TableCaption,
     TableContainer,
   } from '@chakra-ui/react';
   import {Link } from "react-router-dom";
@@ -56,7 +52,7 @@ function Price2(){
 
 <div>
 <TableContainer>
-  <Table variant='striped' colorScheme='green'>
+  <Table  variant='striped' colorScheme='green'>
    
     <Tbody>
       <Tr>
@@ -93,7 +89,7 @@ function Price2(){
         <Td >✅</Td>
       </Tr>
       <Tr>
-      <Td>Suppression Management</Td>
+      <Td>Suppression <br /> Management</Td>
         <Td>✅</Td>
         <Td >✅</Td>
         <Td>✅</Td>
@@ -140,7 +136,7 @@ function Price2(){
       </Tr>
 
       <Tr>
-        <Td>Manual forwarding <br /> recepients</Td>
+        <Td>Manual <br /> forwarding <br /> recepients</Td>
         <Td>-</Td>
         <Td>$1</Td>
         <Td>$0.88</Td>

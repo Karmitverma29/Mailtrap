@@ -12,7 +12,6 @@ import Pricing from "./pricing";
 import Checkout from "./checkout";
 import Otp from "./otp";
 import FurtherCheckout from "./furthercheckout";
-import Loading from "./loading";
 function Allroutes(){
 
     return <div>
@@ -29,7 +28,6 @@ function Allroutes(){
     <Route path="/checkout" element={<Checkout/>}/>
     <Route path="/otp" element={<Otp/>}/>
     <Route path="/furtherCheckout" element={<FurtherCheckout/>}/>
-    <Route path="/loading" element={<Loading/>}/>
 </Routes>
         <Footer/>
 

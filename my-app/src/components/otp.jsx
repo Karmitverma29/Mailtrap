@@ -13,7 +13,7 @@ function Otp(){
     <PinInputField />
   </PinInput>
 </HStack>
-<Link href="/loading">
+<Link href="/furtherCheckout">
 <Button
 bg={'#4c83ee'}
 color={'white'}
