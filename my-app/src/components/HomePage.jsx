@@ -7,7 +7,7 @@ function HomePage(){
     return <div >
 <div style={{height:"1200px",width:"100%",fontFamily:"Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji",backgroundColor:"888888"}}>
 <h1 style={{textAlign:"center",fontSize:"42px",
-fontWeight:"600",marginTop:"50px"
+fontWeight:"700",marginTop:"50px"
 }}>Email Sandbox</h1>
 
 <p style={{textAlign:"center",fontWeight:"500",fontSize:"19px",marginTop:"30px"}}>Capture SMTP traffic from staging and dev environments</p>

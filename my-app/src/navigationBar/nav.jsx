@@ -159,7 +159,7 @@ import {
     );
   };
   
-  const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
+  const DesktopSubNav = ({ label, href, subLabel,logo_img }: NavItem) => {
     return (
       <Link
         href={href}
@@ -178,6 +178,7 @@ import {
               {label}
             </Text>
             <Text fontSize={'sm'}>{subLabel}</Text>
+            <img style={{height:"35px",width:"37px"}} src={logo_img} alt='logo'/>
           </Box>
           <Flex
             transition={'all .3s ease'}
@@ -262,6 +263,7 @@ import {
     subLabel?: string;
     children?: Array<NavItem>;
     href?: string;
+    logo_img?:string;
   }
   
   const NAV_ITEMS: Array<NavItem> = [
@@ -272,31 +274,37 @@ import {
           label: 'QA Automation',
           subLabel: 'Automation for Email Testing',
           href: '/auto',
+          logo_img:'https://mailtrap.io/wp-content/uploads/2021/06/qa_automation_icon_menu.svg'
         },
         {
           label: 'HTML Check',
           subLabel: 'Find HTML/CSS Issues',
           href: '#',
+          logo_img:'https://mailtrap.io/wp-content/uploads/2021/06/check_html_icon_menu.svg'
         },
         {
             label: 'Fake SMTP Server',
             subLabel: 'Your own SMTP Server',
             href: '#',
+            logo_img:'https://mailtrap.io/wp-content/uploads/2021/06/fake_smtp_server_icon_menu.svg'
           },
           {
             label: 'Sandbox API',
             subLabel: 'Integerate with your application.',
             href: '#',
+            logo_img:'https://mailtrap.io/wp-content/uploads/2021/06/api_icon_menu.svg'
           },
       ],
     },
     {
       label: 'Email API',
-      href:'/email'
+      href:'/email',
+      logo_img:'#'
     },
     {
       label: 'Pricing',
       href: '/pricing',
+      logo_img:'#'
     },
     {
       label: 'Resources',
@@ -305,21 +313,25 @@ import {
           label: 'API',
           subLabel: 'Integerate with existing resources.',
           href: '#',
+          logo_img:'https://mailtrap.io/wp-content/uploads/2022/06/Transactional-Email-Sending_icon-09.svg'
         },
         {
           label: 'Case Studies',
           subLabel: 'Success stories of our customers',
           href: '/tabs',
+          logo_img:'https://mailtrap.io/wp-content/uploads/2022/06/Transactional-Email-Sending_icon-08.svg'
         },
         {
             label: 'Blogs',
             subLabel: 'The best content about emails.',
-            href: '#',
+            href: '/blogs',
+            logo_img:'https://mailtrap.io/wp-content/uploads/2022/06/Transactional-Email-Sending_icon-07.svg'
           },
           {
             label: 'Help',
             subLabel: "How-to's and knowledge base",
             href: '#',
+            logo_img:'https://mailtrap.io/wp-content/uploads/2022/03/Transactional-Email-Sending_icon-06.svg'
           },
       ],
     },
