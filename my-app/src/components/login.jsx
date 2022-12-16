@@ -44,9 +44,9 @@ navigate("/")
 <p style={{textAlign:"center",marginRight:"30px",marginTop:"30px"}}>OR</p>
 <form onSubmit={handlesubmit}>
 <label style={{width:"380px",textAlign:"left",marginLeft:"25px"}}>Email</label>
-<input  name="email" value={loginn.email} onChange={handlechange}   style={{height:"52px",border:"1px solid black",width:"380px",borderRadius:"8px",marginTop:"20px",color:"#ffffff",marginLeft:"25px"}} type="email" placeholder=""></input>
+<input  name="email" value={loginn.email} onChange={handlechange}   style={{height:"52px",border:"1px solid black",width:"380px",borderRadius:"8px",marginTop:"20px",color:"black",marginLeft:"25px"}} type="email" placeholder=""></input>
 <label style={{width:"380px",textAlign:"left",marginLeft:"25px"}}>Password</label>
-<input name="password" value={loginn.password} onChange={handlechange}  style={{height:"52px",border:"1px solid black",width:"380px",borderRadius:"8px",marginTop:"20px",color:"#ffffff",marginLeft:"25px"}} type="password" placeholder=""></input>
+<input name="password" value={loginn.password} onChange={handlechange}  style={{height:"52px",border:"1px solid black",width:"380px",borderRadius:"8px",marginTop:"20px",color:"black",marginLeft:"25px"}} type="password" placeholder=""></input>
 
 <button type="submit" style={{marginLeft:"30px",marginTop:"25px",height:"52px",width:"380px",borderRadius:"8px",backgroundColor:"#22d172",color:"#ffffff",fontSize:"14px",fontWeight:"600"}} >Log in</button>
 <p style={{textAlign:"center",marginTop:"20px"}}>Haven't received the confirmation email yet? <br />
