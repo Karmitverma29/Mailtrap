@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 function Login() {
   let data=JSON.parse(localStorage.getItem("Data"));
+  const[toggle,settoggle]=useState(false);
   const[loginn,setLoginn]=useState({
     email:"",
     password:"",
@@ -27,7 +28,7 @@ function Login() {
         setLoggedin(true);
 
 alert("Login Successful!");
-localStorage.setItem("login",loggedin);
+localStorage.setItem("login_toggle",toggle);
 console.log(loggedin)
 navigate("/")
 

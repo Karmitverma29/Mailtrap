@@ -30,6 +30,8 @@ import {
 
 
     const { isOpen, onToggle } = useDisclosure();
+    let data1=localStorage.getItem("login_toggle");
+    let data2=JSON.parse(localStorage.getItem("Data"));
   
     return (
       <Box>
@@ -77,8 +79,11 @@ import {
             direction={'row'}
             spacing={6}>
 
-             
-            <Button
+
+{
+  data1? <h1>{data2.email}</h1>:<>
+  
+  <Button
             style={{border:"1px solid #1a2e44",width:"77px",color:"#1a2e44"}}
               as={'a'}
               fontSize={'sm'}
@@ -101,6 +106,11 @@ import {
               Sign Up
             </Button>
             </Link>
+  
+  </>
+}
+             
+            
             
           </Stack>
         </Flex>
