@@ -39,10 +39,16 @@ import {
                 <FormLabel>Card Number</FormLabel>
                 <Input type="number" />
               </FormControl>
+
               <FormControl id="date">
                 <FormLabel>Expiry date</FormLabel>
                 <Input type="month" />
               </FormControl>
+              <FormControl id="password">
+                <FormLabel >CVV</FormLabel>
+                <Input inputMode='numeric' style={{width:"70px"}} placeholder='CVV' maxLength="3" type="password" />
+              </FormControl>
+
               <Stack spacing={10}>
                 <Stack
                   direction={{ base: 'column', sm: 'row' }}
